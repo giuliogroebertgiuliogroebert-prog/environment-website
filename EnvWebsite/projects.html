@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigns - EcoProtect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { eco: { 50: '#f0fdf4', 500: '#22c55e', 400: '#4ade80', 600: '#16a34a', 900: '#14532d', } } } } }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 absolute bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="bg-eco-500 w-10 h-10 rounded-lg flex items-center justify-center text-white"><i class="fa-solid fa-leaf"></i></div>
+                    <span class="heading-font font-bold text-2xl nav-text-adapt text-white">EcoProtect</span>
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="nav-link nav-text-adapt text-white hover:text-eco-400 font-medium">Home</a>
+                    <a href="about.html" class="nav-link nav-text-adapt text-white hover:text-eco-400 font-medium">About</a>
+                    <a href="projects.html" class="nav-link nav-text-adapt text-white hover:text-eco-400 font-medium">Campaigns</a>
+                    <a href="contact.html" class="nav-link nav-text-adapt text-white hover:text-eco-400 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="nav-text-adapt text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-t absolute w-full left-0 top-full shadow-xl">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-4 py-3 text-gray-800 font-medium hover:bg-eco-50 hover:text-eco-600 rounded-lg transition">Home</a>
+                <a href="about.html" class="block px-4 py-3 text-gray-800 font-medium hover:bg-eco-50 hover:text-eco-600 rounded-lg transition">About</a>
+                <a href="projects.html" class="block px-4 py-3 text-gray-800 font-medium hover:bg-eco-50 hover:text-eco-600 rounded-lg transition">Campaigns</a>
+                <a href="contact.html" class="block px-4 py-3 text-gray-800 font-medium hover:bg-eco-50 hover:text-eco-600 rounded-lg transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="relative pt-40 pb-20 bg-eco-900 overflow-hidden">
+        <div class="absolute inset-0 w-full h-full opacity-30 mix-blend-overlay">
+            <img src="images/cleanup.png" alt="Ocean" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto fade-in">
+            <h1 class="heading-font text-5xl md:text-6xl font-bold text-white mb-4">Our Campaigns</h1>
+            <p class="text-xl text-eco-100 font-light max-w-2xl mx-auto">Explore the ongoing projects where your help creates physical change.</p>
+        </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all group fade-in">
+                    <div class="relative h-64 overflow-hidden gradient-overlay">
+                        <img src="images/planting.png" alt="Planting" class="w-full h-full object-cover hover-scale">
+                        <div class="absolute bottom-4 left-4 z-10">
+                            <span class="bg-eco-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Active</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="heading-font text-2xl font-bold text-gray-900 mb-3 group-hover:text-eco-600 transition-colors">Global Reforestation</h3>
+                        <p class="text-gray-600 mb-6 line-clamp-3">Join us in our mission to plant 10 million trees by 2030 to combat deforestation and restore vital wild habitats.</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+                            <div class="bg-eco-500 h-2.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm font-medium text-gray-500 mb-6">
+                            <span>$750,000 Raised</span>
+                            <span>Goal: $1M</span>
+                        </div>
+                        <a href="contact.html" class="block w-full text-center py-3 bg-gray-50 text-eco-600 font-semibold rounded-xl group-hover:bg-eco-500 group-hover:text-white transition-all">Support Campaign</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all group fade-in" style="transition-delay: 150ms;">
+                    <div class="relative h-64 overflow-hidden gradient-overlay">
+                        <img src="images/solar.png" alt="Solar Energy" class="w-full h-full object-cover hover-scale">
+                        <div class="absolute bottom-4 left-4 z-10">
+                            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Ongoing</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="heading-font text-2xl font-bold text-gray-900 mb-3 group-hover:text-eco-600 transition-colors">Solar For Communities</h3>
+                        <p class="text-gray-600 mb-6 line-clamp-3">Providing renewable solar panel arrays to off-grid communities, replacing harmful diesel generators with clean power.</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+                            <div class="bg-blue-500 h-2.5 rounded-full" style="width: 45%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm font-medium text-gray-500 mb-6">
+                            <span>$225,000 Raised</span>
+                            <span>Goal: $500K</span>
+                        </div>
+                        <a href="contact.html" class="block w-full text-center py-3 bg-gray-50 text-eco-600 font-semibold rounded-xl group-hover:bg-eco-500 group-hover:text-white transition-all">Support Campaign</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all group fade-in" style="transition-delay: 300ms;">
+                    <div class="relative h-64 overflow-hidden gradient-overlay">
+                        <img src="images/cleanup.png" alt="Ocean Cleanup" class="w-full h-full object-cover hover-scale">
+                        <div class="absolute bottom-4 left-4 z-10">
+                            <span class="bg-teal-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Urgent</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="heading-font text-2xl font-bold text-gray-900 mb-3 group-hover:text-eco-600 transition-colors">Ocean Plastic Removal</h3>
+                        <p class="text-gray-600 mb-6 line-clamp-3">Organizing massive coastal cleanups and deploying ocean purification barriers to save marine life from plastic pollution.</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+                            <div class="bg-teal-500 h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm font-medium text-gray-500 mb-6">
+                            <span>120 Tons Collected</span>
+                            <span>Goal: 150 Tons</span>
+                        </div>
+                        <a href="contact.html" class="block w-full text-center py-3 bg-gray-50 text-eco-600 font-semibold rounded-xl group-hover:bg-eco-500 group-hover:text-white transition-all">Support Campaign</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer snippet -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-10 border-t border-gray-800 text-center">
+        <p>&copy; 2026 EcoProtect. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

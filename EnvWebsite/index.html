@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoProtect - Saving Our Planet Together</title>
+    <meta name="description" content="Join EcoProtect in our global mission to preserve biodiversity, fight climate change, and create a sustainable future.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        eco: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        earth: {
+                            500: '#8b5a2b',
+                            600: '#6b4423'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 absolute bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <div class="bg-eco-500 w-10 h-10 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:bg-eco-400 transition transform group-hover:rotate-12">
+                            <i class="fa-solid fa-leaf text-xl"></i>
+                        </div>
+                        <span class="heading-font font-bold text-2xl nav-text-adapt text-white tracking-tight ml-2">EcoProtect</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="nav-link nav-text-adapt text-white hover:text-eco-400 font-medium transition-colors">Home</a>
+                    <a href="about.html" class="nav-link nav-text-adapt text-white hover:text-eco-400 font-medium transition-colors">About</a>
+                    <a href="projects.html" class="nav-link nav-text-adapt text-white hover:text-eco-400 font-medium transition-colors">Campaigns</a>
+                    <a href="contact.html" class="nav-link nav-text-adapt text-white hover:text-eco-400 font-medium transition-colors">Contact</a>
+                    <a href="contact.html" class="bg-eco-500 text-white px-7 py-2.5 rounded-full font-semibold hover:bg-eco-400 hover:scale-105 transition-all shadow-[0_0_20px_rgba(34,197,94,0.4)]">Donate Now</a>
+                </div>
+                <!-- Mobile button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="nav-text-adapt text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-t border-gray-100 absolute w-full left-0 top-full shadow-xl">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-4 py-3 text-gray-800 font-medium hover:bg-eco-50 hover:text-eco-600 rounded-lg transition">Home</a>
+                <a href="about.html" class="block px-4 py-3 text-gray-800 font-medium hover:bg-eco-50 hover:text-eco-600 rounded-lg transition">About Us</a>
+                <a href="projects.html" class="block px-4 py-3 text-gray-800 font-medium hover:bg-eco-50 hover:text-eco-600 rounded-lg transition">Campaigns</a>
+                <a href="contact.html" class="block px-4 py-3 text-gray-800 font-medium hover:bg-eco-50 hover:text-eco-600 rounded-lg transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[100vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 w-full h-full">
+            <img src="images/hero.png" alt="Stunning Nature" class="w-full h-full object-cover transform scale-105 animate-[pulse_20s_infinite_alternate]" style="animation: zoomInOut 30s infinite alternate;">
+            <div class="absolute inset-0 bg-gradient-to-b from-gray-900/60 via-gray-900/40 to-gray-900/80"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16 fade-in">
+            <div class="inline-block mb-6 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-eco-300 font-semibold text-sm tracking-widest uppercase">
+                <i class="fa-solid fa-globe mr-2"></i> Join The Movement
+            </div>
+            <h1 class="heading-font text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-[1.1]">
+                Earth Is Our <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-eco-300 via-green-400 to-teal-300">Only Home.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light max-w-2xl mx-auto">
+                Discover a community dedicated to restoring nature, preserving wildlife, and building a sustainable future.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                <a href="projects.html" class="bg-eco-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-eco-400 hover:-translate-y-1 transition-all shadow-[0_10px_30px_rgba(34,197,94,0.4)] text-lg flex items-center justify-center">
+                    Explore Campaigns <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="about.html" class="glass text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all text-lg flex items-center justify-center">
+                    <i class="fa-regular fa-circle-play mr-2 text-xl"></i> Watch Our Story
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center animate-bounce">
+            <span class="text-white/60 text-sm font-medium tracking-widest uppercase mb-2">Scroll</span>
+            <i class="fa-solid fa-chevron-down text-white/60"></i>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-eco-900 relative z-20 -mt-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
+                <div class="fade-in">
+                    <div class="text-4xl md:text-5xl heading-font font-bold text-white mb-2">2.5M+</div>
+                    <div class="text-eco-200 text-sm md:text-base font-medium">Trees Planted</div>
+                </div>
+                <div class="fade-in" style="transition-delay: 100ms;">
+                    <div class="text-4xl md:text-5xl heading-font font-bold text-white mb-2">150+</div>
+                    <div class="text-eco-200 text-sm md:text-base font-medium">Active Projects</div>
+                </div>
+                <div class="fade-in" style="transition-delay: 200ms;">
+                    <div class="text-4xl md:text-5xl heading-font font-bold text-white mb-2">45</div>
+                    <div class="text-eco-200 text-sm md:text-base font-medium">Countries Reached</div>
+                </div>
+                <div class="fade-in" style="transition-delay: 300ms;">
+                    <div class="text-4xl md:text-5xl heading-font font-bold text-white mb-2">12K</div>
+                    <div class="text-eco-200 text-sm md:text-base font-medium">Volunteers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Overview -->
+    <section class="py-24 bg-white overflow-hidden text-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2 relative fade-in-left">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="images/planting.png" alt="Volunteers Planting" class="w-full h-[500px] object-cover">
+                    </div>
+                    <div class="absolute -bottom-10 -right-10 bg-white p-6 rounded-2xl shadow-xl hidden md:block border border-gray-100">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-eco-100 text-eco-600 rounded-full flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-xl">10 Years</h4>
+                                <p class="text-gray-500 font-medium text-sm">Of protecting nature</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 fade-in-right">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-12 h-[2px] bg-eco-500"></span>
+                        <span class="text-eco-600 font-bold uppercase tracking-wider text-sm">Who We Are</span>
+                    </div>
+                    <h2 class="heading-font text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        We are passionate about <br><span class="text-eco-600">nature conservation.</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        At EcoProtect, we believe that small actions create massive ripples. Since 2014, we have been working tirelessly with communities worldwide to protect fragile ecosystems, transition to renewable energy, and clean our oceans.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-circle text-eco-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Reforestation</h4>
+                                <p class="text-gray-500 text-sm">Planting indigenous trees to restore deep forest ecosystems.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-circle text-eco-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Ocean Cleanup</h4>
+                                <p class="text-gray-500 text-sm">Removing micro-plastics and massive waste from marine habitats.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="about.html" class="inline-flex items-center gap-2 text-eco-600 font-bold hover:text-eco-800 transition-colors">
+                        Discover Our Mission <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-eco-900">
+            <img src="images/solar.png" class="w-full h-full object-cover opacity-20 mix-blend-overlay">
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center fade-in">
+            <h2 class="heading-font text-4xl md:text-6xl font-bold text-white mb-6">Make a Difference Today.</h2>
+            <p class="text-xl text-eco-100 mb-10 font-light max-w-2xl mx-auto">Your contribution helps us fund global conservation projects. Whether through volunteering or donating, you have the power to change the world.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-5">
+                <a href="contact.html" class="bg-white text-eco-900 px-8 py-4 rounded-full font-bold hover:bg-gray-100 hover:-translate-y-1 transition-all shadow-xl text-lg">Become a Volunteer</a>
+                <a href="contact.html" class="bg-eco-500 border border-eco-500 text-white px-8 py-4 rounded-full font-bold hover:bg-eco-400 hover:border-eco-400 hover:-translate-y-1 transition-all shadow-xl text-lg">Donate Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-20 pb-10 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-leaf text-eco-500 text-2xl"></i>
+                        <span class="heading-font font-bold text-2xl text-white">EcoProtect</span>
+                    </a>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Dedicated to preserving the Earth's natural resources and ensuring a sustainable future for generations to come.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-eco-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-eco-500 hover:text-white transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-eco-500 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-eco-500 hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-eco-400 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-eco-400 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-eco-400 transition-colors">Our Campaigns</a></li>
+                        <li><a href="contact.html" class="hover:text-eco-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Campaigns</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-eco-400 transition-colors">Amazon Reforestation</a></li>
+                        <li><a href="#" class="hover:text-eco-400 transition-colors">Ocean Cleanup</a></li>
+                        <li><a href="#" class="hover:text-eco-400 transition-colors">Wildlife Protection</a></li>
+                        <li><a href="#" class="hover:text-eco-400 transition-colors">Solar Energy Initiative</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to get the latest updates on our environmental projects.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email address" class="bg-gray-800 text-white px-4 py-3 rounded-l-lg w-full focus:outline-none focus:ring-1 focus:ring-eco-500 border border-gray-700">
+                        <button type="submit" class="bg-eco-600 hover:bg-eco-500 text-white px-4 py-3 rounded-r-lg transition-colors">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2026 EcoProtect. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
